@@ -1,0 +1,19 @@
+<div class="container-fluid">
+  <div class="row flex-nowrap">
+      <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+          <div class="d-flex flex-column align-items-center pt-5 text-white min-vh-100">
+            <div class="btn-group-vertical gap-4">
+              <button type="button" class="btn btn-outline-light" (click)="toggleTerkep()">Térkép</button>
+              <button type="button" class="btn btn-outline-light" (click)="toggleGallery()">Galéria</button>
+              <button type="button" class="btn btn-outline-light" (click)="toggleModell()">Modellek</button>
+            </div>
+          </div>
+      </div>
+
+      <div class="col py-3">
+        <app-canvas *ngIf="terkepVisible"></app-canvas>
+        <app-gallery *ngIf="galleryVisible"></app-gallery>
+        <app-modell *ngIf="modellVisible"></app-modell>
+      </div>
+  </div>
+</div>

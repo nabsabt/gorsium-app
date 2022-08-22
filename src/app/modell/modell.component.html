@@ -1,0 +1,41 @@
+<h1 class="text-center">Modell komponens</h1>
+
+
+<hr>
+
+
+<form>
+  <div class="mb-3">
+    <label class="form-label">First name</label>
+    <input [(ngModel)]="inputFirstname" name="first" type="text" class="form-control" placeholder="Enter your first name here">
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Last name</label>
+    <input [(ngModel)]="inputLastname" name="last" type="text" class="form-control" placeholder="Enter your last name here">
+  </div>
+  <button type="submit" class="btn btn-primary m-2" (click)="onAddName()">Send</button>
+  <button type="submit" class="btn btn-primary m-2" (click)="onClearAll()">Clear all</button>
+</form>
+
+
+<hr>
+
+<div class="overflow-auto">
+  <table class="table table-dark table-striped text-center">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">First</th>
+        <th scope="col">Last</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let name of names">
+        <th scope="row">{{ name.id }}</th>
+        <td>{{ name.firstName }}</td>
+        <td>{{ name.lastName }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<hr>

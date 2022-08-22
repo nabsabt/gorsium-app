@@ -1,0 +1,48 @@
+::ng-deep .ol-control{
+  margin-left: 1%;
+  margin-top: 1%;
+}
+
+
+::ng-deep :root .layer-switcher {
+  width: 20%;
+  min-width: 16em;
+  background-color: rgba(180, 180, 180, 0.7);
+  border: 10;
+  border-radius: 8px;
+  color: black;
+}
+
+::ng-deep button[title="Legend"]{
+  display: none;
+}
+
+::ng-deep button[title="Zoom in"]{
+  background-color: rgb(84, 84, 82);
+  color: white;
+  border-radius: 4px;
+  margin: 0.5%;
+  width: 30px;
+  transition: 0.4s;
+}
+
+::ng-deep button[title="Zoom in"]:hover{
+  transition: 0.4s;
+  background-color: rgb(200,200,200);
+  color: black;
+}
+
+::ng-deep button[title="Zoom out"]{
+  background-color: rgb(84, 84, 82);
+  color: white;
+  border-radius: 4px;
+  margin: 0.5%;
+  width: 30px;
+  transition: 0.4s;
+}
+
+::ng-deep button[title="Zoom out"]:hover{
+  transition: 0.4s;
+  background-color: rgb(200,200,200);
+  color: black;
+}
